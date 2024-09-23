@@ -20,15 +20,18 @@ public class Main {
         // Sum up all income
         double income = bubblegum + toffee + iceCream + milkChocolate + doughnut + pancake;
 
-        // Print earned amounts
-        System.out.println("Earned amount: ");
-        System.out.println("Bubblegum: $" + bubblegum);
-        System.out.println("Toffee: $" + toffee);
-        System.out.println("Ice cream: $" + iceCream);
-        System.out.println("Milk chocolate: $" + milkChocolate);
-        System.out.println("Doughnut: $" + doughnut);
-        System.out.println("Pancake: $" + pancake);
-        System.out.println("Income: $" + income);
+        // Print earned amounts using printf
+
+        System.out.println("Earned amount:");
+        System.out.printf("Bubblegum: $%.2f%n", (double) bubblegum);
+        System.out.printf("Toffee: $%.2f%n", toffee);
+        System.out.printf("Ice cream: $%.2f%n", (double) iceCream);
+        System.out.printf("Milk chocolate: $%.2f%n", (double) milkChocolate);
+        System.out.printf("Doughnut: $%.2f%n", doughnut);
+        System.out.printf("Pancake: $%.2f%n", pancake);
+        
+        System.out.printf("Income: $%.2f%n", income);
+
 
         // Input for expenses
         System.out.println("Staff expenses: ");
